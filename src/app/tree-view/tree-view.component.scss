@@ -1,0 +1,60 @@
+d3noob-collapsible-tree .wrapper {
+    position: relative;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+d3noob-collapsible-tree .fade {
+    display: inline-block;
+    border: 1px solid black;
+    position: absolute;
+    visibility: hidden;
+}
+
+d3noob-collapsible-tree .node circle {
+    stroke-width: var(--circle-stroke-width, 1px);
+    stroke: var(--circle-stroke, steelblue);
+    ;
+}
+
+d3noob-collapsible-tree .node.fill {
+    fill: var(--circle-fill, lightsteelblue);
+    ;
+}
+
+d3noob-collapsible-tree .link {
+    stroke: var(--stroke-link, #ccc);
+    stroke-width: var(--stroke-width-link, 1px);
+}
+
+d3noob-collapsible-tree .node text,
+d3noob-collapsible-tree .fade {
+    font-family: sans-serif;
+    font-size: .675em;
+}
+
+d3noob-collapsible-tree .node circle {
+    fill: var(--circle-empty, white);
+}
+
+d3noob-collapsible-tree .link {
+    fill: none;
+}
+
+@media (min-width: 400px) {
+
+    d3noob-collapsible-tree .node text,
+    d3noob-collapsible-tree .fade {
+        font-size: .75em;
+    }
+}
+
+@media (min-width: 600px) {
+
+    d3noob-collapsible-tree .node text,
+    d3noob-collapsible-tree .fade {
+        font-size: .875em;
+    }
+}
